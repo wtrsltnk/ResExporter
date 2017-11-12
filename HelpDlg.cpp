@@ -1,0 +1,23 @@
+// HelpDlg.cpp: implementation of the HelpDlg class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "HelpDlg.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+HelpDlg::HelpDlg()
+{
+	this->dwResourceDlg = IDD_HELP;
+}
+
+HelpDlg::~HelpDlg()
+{
+}
+
+VOID HelpDlg::DlgProc(UINT uMsg, WPARAM wParam, LPARAM lParam)
+{
+	CustomDialog::DlgProc(uMsg, wParam, lParam);
+}

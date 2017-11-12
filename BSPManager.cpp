@@ -1,0 +1,27 @@
+// BSPManager.cpp: implementation of the BSPManager class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "BSPManager.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+BSPManager::BSPManager()
+{
+}
+
+BSPManager::~BSPManager()
+{
+}
+
+BOOL BSPManager::OpenFile(LPTSTR strFileName)
+{
+	return FALSE;
+}
+	
+int BSPManager::GetResources()
+{
+	return 0;
+}

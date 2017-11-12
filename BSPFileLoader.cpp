@@ -1,0 +1,27 @@
+// BSPFileLoader.cpp: implementation of the BSPFileLoader class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "BSPFileLoader.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+BSPFileLoader::BSPFileLoader()
+{
+}
+
+BSPFileLoader::~BSPFileLoader()
+{
+}
+
+BOOL BSPFileLoader::OpenFile(LPTSTR strFileName)
+{
+	return FALSE;
+}
+
+LPTSTR BSPFileLoader::GetEntities()
+{
+	return 0;
+}
