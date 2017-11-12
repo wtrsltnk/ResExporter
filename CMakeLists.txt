@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(res-exporter)
+project(ResExporter)
 
 add_subdirectory(Controls)
 add_subdirectory(Dialogs)
 
-add_executable(res-exporter WIN32
+add_executable(ResExporter WIN32
     Attribute.cpp
     BatchDlg.cpp
     BSPFileLoader.cpp
@@ -45,23 +45,23 @@ add_executable(res-exporter WIN32
     resource.rc
     )
 
-target_include_directories(res-exporter
+target_include_directories(ResExporter
     PRIVATE Controls
     PRIVATE Dialogs
     )
 
-target_link_libraries(res-exporter
+target_link_libraries(ResExporter
     Controls
     Dialogs
     ComCtl32
     )
 
-target_compile_features(res-exporter
+target_compile_features(ResExporter
     PRIVATE cxx_auto_type
     PRIVATE cxx_nullptr
     PRIVATE cxx_range_for
     )
 
-target_link_libraries(res-exporter
+target_link_libraries(ResExporter
     Controls
 )
