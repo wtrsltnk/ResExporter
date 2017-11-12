@@ -4,4 +4,4 @@ Old piece of code that I wrote around 2005. This application lets you create res
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot01.png)
