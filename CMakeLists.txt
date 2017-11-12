@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 
 project(ResExporter)
 
@@ -61,7 +61,3 @@ target_compile_features(ResExporter
     PRIVATE cxx_nullptr
     PRIVATE cxx_range_for
     )
-
-target_link_libraries(ResExporter
-    Controls
-)
