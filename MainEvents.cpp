@@ -215,10 +215,10 @@ void Main::OnCreate()
 	this->openfile.SetTitle("Open...");
 	this->openfile.SetFont(this->hFont);
 
-	this->export.Create(this->hWnd, IDEXPORT);
-	this->export.Size(50, 24);
-	this->export.SetTitle("Export");
-	this->export.SetFont(this->hFont);
+    this->_export.Create(this->hWnd, IDEXPORT);
+    this->_export.Size(50, 24);
+    this->_export.SetTitle("Export");
+    this->_export.SetFont(this->hFont);
 
 	this->exportTo.Create(this->hWnd, IDEXPORTTO);
 	this->exportTo.Size(65, 24);
@@ -255,7 +255,7 @@ void Main::OnSize(WPARAM wParam, LPARAM lParam)
 	this->saveName.Move(LOWORD(lParam) - 10 - 70, 10);
 
 	this->openfile.Move(10, HIWORD(lParam) - 34);
-	this->export.Move(70, HIWORD(lParam) - 34);
+    this->_export.Move(70, HIWORD(lParam) - 34);
 	this->exportTo.Move(130, HIWORD(lParam) - 34);
 	this->batch.Move(205, HIWORD(lParam) - 34);
 	this->help.Move(265, HIWORD(lParam) - 34);

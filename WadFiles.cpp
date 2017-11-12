@@ -3,6 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "WadFiles.h"
+#include <string.h>
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
@@ -114,7 +115,7 @@ int WadFiles::FindNextChar(char* str, int offset, char c)
 			return i;
 		}
 	}
-	return i;
+    return len;
 }
 
 void WadFiles::SetWadItem(char* wadfile, int index)

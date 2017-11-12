@@ -43,7 +43,7 @@ private:
 	Button saveName;
 
 	Button openfile;
-	Button export;
+    Button _export;
 	Button exportTo;
 	Button batch;
 	Button help;

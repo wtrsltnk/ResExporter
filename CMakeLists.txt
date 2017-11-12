@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(res-exporter)
 
-add_subdirectory(ControlLib)
-add_subdirectory(DialogsLib)
+add_subdirectory(Controls)
+add_subdirectory(Dialogs)
 
 add_executable(res-exporter WIN32
     Attribute.cpp
@@ -46,8 +46,14 @@ add_executable(res-exporter WIN32
     )
 
 target_include_directories(res-exporter
-    PRIVATE ControlLib/package/include
-    PRIVATE DialogsLib
+    PRIVATE Controls
+    PRIVATE Dialogs
+    )
+
+target_link_libraries(res-exporter
+    Controls
+    Dialogs
+    ComCtl32
     )
 
 target_compile_features(res-exporter

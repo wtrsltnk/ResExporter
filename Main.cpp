@@ -211,12 +211,12 @@ void Main::UpdateButonStates()
 	this->exportTo.Disable();
 	this->rem.Disable();
 	this->add.Disable();
-	this->export.Disable();
+    this->_export.Disable();
 	this->saveName.Disable();
 
 	if (this->resources != 0)
 	{
-		this->export.Enable();
+        this->_export.Enable();
 		this->exportTo.Enable();
 		
 		if (this->resourcesList.GetSelectedIndex() != -1)
