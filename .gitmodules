@@ -1,0 +1,6 @@
+[submodule "Dialogs"]
+	path = Dialogs
+	url = https://github.com/wtrsltnk/Dialogs.git
+[submodule "Controls"]
+	path = Controls
+	url = https://github.com/wtrsltnk/Controls.git
